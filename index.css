@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-1: #cad2c5;
+  --color-2: #84a98c;
+  --color-3: #52796f;
+  --color-4: #354f52;
+  --color-5: #2f3e46;
+  --color-6: #000000;
+  --color-7: #ffffff;
+  --color-hover: var(--color-1);
+  --color-border: var(--color-1);
+  --color-icon: #000000;
+  --color-icon-hover: var(--color-1);
+  --box-shadow-hover: 2px 2px 10px var(--color-1);
+  --scale-hover: 1.12;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  user-select: none;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 10px;
+  color: var(--color-1);
+}
+
+body {
+  background-color: var(--color-5);
+  min-height: 100vh;
+  opacity: 0.9;
+  position: relative;
+}
+
+header {
+  background: var(--color-4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 1.3rem 0;
+}
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  width: 90%;
+}
+
+.list-items {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: red;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+a {
+  color: var(--color-7);
+  font-weight: 900;
+}
+
+a:hover {
+  color: var(--color-6);
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+/* about */
+.about {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  z-index: 1;
+  /* padding-top: 5rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* left side */
+.about .left-side {
+  height: 100vh;
+  max-width: 600px;
+  width: 48%;
+  padding-top: 3rem;
+}
+.hellow-text {
+  font-size: 3rem;
+  margin-top: 6rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #c9c0c0;
+  text-transform: capitalize;
+}
+
+.role-text {
+  font-size: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #c9c0c0;
+  margin-left: 6rem;
+}
+
+.name {
+  font-size: 4rem;
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 4rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-left: 3rem;
+}
+
+.roll {
+  color: rgb(255, 96, 4);
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: justify;
+  color: #c9c0c0;
+}
+
+.role-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+
+.social-links ul,
+.skills-div ul {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 4rem;
+}
+
+.social-links ul li,
+.skills-div ul li {
+  width: 4rem;
+  margin: 0 1rem;
+}
+
+.social-links ul i:hover {
+  border-color: var(--color-border);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.social-links ul .x:hover,
+.social-links ul .facebook:hover,
+.social-links ul .instagram:hover,
+.social-links ul .linked-in:hover,
+.social-links ul .whatsapp:hover,
+.skills-div ul .html-logo:hover,
+.skills-div ul .css-logo:hover,
+.skills-div ul .js-logo:hover,
+.skills-div ul .react-logo:hover {
+  border-color: var(--color-border);
+  box-shadow: var(--box-shadow-hover);
+  transform: scale(var(--scale-hover));
+  transition-duration: 200ms;
+  color: red;
+}
+
+.x,
+.facebook,
+.instagram,
+.whatsapp,
+.linked-in,
+.html-logo,
+.css-logo,
+.js-logo,
+.react-logo,
+.baar.logo {
+  font-size: 3rem;
+  color: var(--color-icon);
+  border: 2px solid var(--color-border);
+  padding: 7px;
+  border-radius: 50%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  mix-blend-mode: screen;
+  cursor: pointer;
+}
+.hire-div {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.hire-me {
+  all: unset;
+  font-size: 1.5rem;
+  padding: 0.3rem 1rem;
+  background: #ffffff;
+  border-radius: 2px;
+  color: black;
+  cursor: pointer;
+  font-weight: 900;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.hire-me::after {
+  content: "";
+  background: linear-gradient(to right, #f9572f, #446de8); /* Radial gradient */
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  right: -1px;
+  border-radius: 2px;
+  transition: transform 0.2s ease-out, opacity 0.3s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: left;
+}
+.hire-me:hover::after {
+  transform: scale(1);
+  opacity: 1;
+  font-weight: bold;
+}
+.skills-div {
+  margin-top: 4rem;
+}
+.baar-logo {
+  display: none;
+  cursor: pointer;
+}
+.right-side {
+  width: 48%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.right-side .img-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+.admin-img {
+  width: 200px;
+  object-fit: contain;
+  border-radius: 50px;
+  /* overflow: hidden; */
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  animation: scaling 5s ease-in-out infinite;
+}
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: grayscale(60%);
+    box-shadow: 0px 0px 40px rgb(234, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.image-div {
+  width: fit-content;
+  padding: 12rem;
+  border-radius: 50%;
+  border: 2px solid wheat;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.star-svg {
+  width: 20px;
+  position: absolute;
+  left: 5rem;
+  bottom: 15rem;
+  animation: rotating 3s infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+    bottom: 15rem;
+    filter: drop-shadow(0px 0px 0px aqua);
+  }
+  50% {
+    transform: rotate(360deg);
+    bottom: 17rem;
+    left: 1rem;
+    filter: drop-shadow(0px 0px 50px aqua);
+  }
+  100% {
+    bottom: 15rem;
+    transform: rotate(0deg);
+    box-shadow: 0 0 0 aqua;
+    filter: drop-shadow(0px 0px 0px aqua);
+  }
+}
+.star-svg-2 {
+  width: 20px;
+  position: absolute;
+  right: 5rem;
+  bottom: 15rem;
+  animation: rotating2 3s infinite;
+}
+@keyframes rotating2 {
+  0% {
+    transform: rotate(0deg);
+    bottom: 15rem;
+    filter: drop-shadow(0px 0px 0px aqua);
+  }
+  50% {
+    transform: rotate(360deg);
+    bottom: 17rem;
+    right: 1rem;
+    filter: drop-shadow(0px 0px 50px aqua);
+  }
+  100% {
+    bottom: 15rem;
+    transform: rotate(0deg);
+    box-shadow: 0 0 0 aqua;
+    filter: drop-shadow(0px 0px 0px aqua);
+  }
+}
+
+.home {
+  min-height: 100vh;
+  background: var(--color-2);
+}
+
+/* media query */
+
+/* Extra Small Devices (Mobiles) */
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  .about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .about .left-side {
+    width: 90%;
+    justify-content: center;
+    height: fit-content;
+    padding-top: 5rem 0;
+  }
+  .social-links ul,
+  .skills-div ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .right-side {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-side .img-container {
+    width: 300px;
+    height: 200px;
+    /* background: red; */
+    margin: 0 auto;
+  }
+  .hellow-text {
+    margin-top: 1.7rem;
+  }
+  .hire-div {
+    margin-top: 2rem;
+  }
+  .admin-img {
+    width: 100px;
+    border-radius: 20px;
+  }
+}
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .about .left-side,
+  .right-side {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .admin-img {
+    width: 150px;
+    border-radius: 30px;
+  }
+}
+
+/* Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+  .about .left-side,
+  .right-side {
+    width: 45%;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  html {
+    font-size: 10px;
+  }
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .admin-img {
+    width: 200px;
+    border-radius: 50px;
+  }
+}
